@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="download (1).jpg" type="image/x-icon">
-    <script>
-        function showMessage(){
-            alert("Submitted succesfully...Thank You.")
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="">
+        // function showMessage(){
+        //     alert("Submitted succesfully...Thank You.")
+        // }
+        $(document).ready(function(){
+            $(".mess").hide();
+            $(".button").click(function(){
+                $(".mess").show();
+                $(".mess").fadeOut(6000);
+
+            });
+
+
+        });
     </script>
 </head> 
 <body bgcolor="cyan">
@@ -35,8 +46,12 @@
         <textarea cols="8" rows="2" id="msg"></textarea>
     </div></br></br>
     <div>
-        <button onClick="showMessage();">Submit</button>
+        <button class="button">Submit</button>
     </div>
+    <div class="mess" align="center">
+        <h5 style="color:rgb(3, 34, 3); Display:auto">Submitted succesfully...Thank You.</h5>
+    </div>
+
 </main>
 </body>
 </html>
