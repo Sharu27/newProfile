@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="download (1).jpg" type="image/x-icon">
+    <script>
+        function showMessage(){
+            alert("Submitted succesfully...Thank You.")
+        }
+    </script>
 </head> 
 <body bgcolor="cyan">
     <h2>Sharath M</h2>
@@ -14,21 +19,23 @@
     <a href="index.html">Home</a>&nbsp;
     <a href="">Contact Me</a>
 </div>
+</br>
+</br>
 <main>
     <div>
-        <label for="username">UserName</label>
+        <label for="username">UserName:&nbsp;</label>
         <input type="text" id="username"/>
     </div></br>
     <div>
-        <label for="email">Email id</label>
+        <label for="email">Email id:&nbsp;</label>
         <input type="email" id="email"/>
     </div></br>
     <div>
-        <label for="msg">Message</label>
+        <label for="msg">Message:&nbsp;</label>
         <textarea cols="8" rows="2" id="msg"></textarea>
-    </div></br>
+    </div></br></br>
     <div>
-        <button>Submit</button>
+        <button onClick="showMessage();">Submit</button>
     </div>
 </main>
 </body>
